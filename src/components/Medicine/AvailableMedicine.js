@@ -1,4 +1,4 @@
-
+import   './AvailableMedicine.css'
 const dummy_medicines = [
     {
       id: 1,
@@ -60,14 +60,34 @@ const dummy_medicines = [
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       price: 13.49
     },
+    
   ];
   
 
 const AvailableMedicine = () =>{
-     let medicines = dummy_medicines.map((medicine) => <li key={medicine.id}>{medicine.name}</li>)
+     let medicines = dummy_medicines.map((medicine) =>( 
+    
+     <li key={medicine.id}>
+        <div className='medi-info'>
+            <div className='medi-info-content'>
+        <div className='name'> {medicine.name}</div>
+        <div className='disc'>{medicine.description}</div>
+        <div className='price'>  &#x20B9; {medicine.price}</div>
+        </div>
+        <div className='medi-info-quantity'>
+            <p>Amount {1}</p>
+            <button>+Add</button>
+        </div>
+        </div>
+         </li>
+     ))
     return(
         <>
+        <div className='medicine-container'>
+            <ul className='list'>
         {medicines}
+        </ul>
+        </div>
         </>
     )
 }

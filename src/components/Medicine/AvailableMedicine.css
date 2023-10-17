@@ -1,0 +1,47 @@
+
+
+.medicine-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    margin-top: 10%;
+}
+   
+.list{
+     height: 30%;
+     width: 40%;
+     background-color: rgba(0, 154, 56, 0.7);
+     padding: 10px 20px;
+     border-radius: 1rem;
+     list-style: none;
+    
+}
+.medi-info{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.medi-info .name{
+    font-weight: bold;
+}
+.medi-info .price{
+    color: wheat;
+}
+.medi-info .disc{
+  max-width: 100%;
+}
+.medi-info-quantity p{
+    display: flex;
+    flex-direction: column;
+    width: 6rem;
+}
+.medi-info-quantity button{
+    border-radius: 1rem;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    font: bold;
+    background-color: wheat;
+}
+
+/* rgba(0, 200, 255, 0.3); */

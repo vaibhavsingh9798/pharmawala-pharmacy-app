@@ -6,11 +6,10 @@
     margin-top: 10%;
 }
    
-
 .medicine-summary{
      height: 30%;
      width: 40%;
-     background-color: rgba(0, 200, 255, 0.3);
+     background-color: rgba(158, 214, 230, 0.7);
      padding: 10px 20px;
      border-radius: 1rem;
 }
@@ -18,3 +17,5 @@
     display: flex;
     justify-content: center;
 }
+
+/* rgba(0, 200, 255, 0.7); */
