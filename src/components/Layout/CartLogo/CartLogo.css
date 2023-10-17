@@ -1,0 +1,19 @@
+.cart{
+    background-color: #f8fdfd;
+    padding: 0 2rem 0 2rem;
+    border-radius: 4rem;
+    font-weight: bold;
+    display: flex;
+    align-items:center;
+    flex-direction: row;  
+    justify-content:space-between;
+    width: 12%;
+}
+.cart .count{
+    background-color:  rgb(70, 171, 137);
+    padding: 0.4rem;
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+

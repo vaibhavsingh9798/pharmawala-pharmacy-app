@@ -1,0 +1,8 @@
+.header{
+    padding: 1rem;
+    background-color: aquamarine;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    color:  rgb(37, 32, 32)
+}
