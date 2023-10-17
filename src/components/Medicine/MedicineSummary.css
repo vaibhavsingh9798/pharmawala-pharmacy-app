@@ -1,0 +1,20 @@
+.medicine-summary-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    margin-top: 10%;
+}
+   
+
+.medicine-summary{
+     height: 30%;
+     width: 40%;
+     background-color: rgba(0, 200, 255, 0.3);
+     padding: 10px 20px;
+     border-radius: 1rem;
+}
+.medicine-summary h2{
+    display: flex;
+    justify-content: center;
+}
