@@ -1,4 +1,5 @@
 import   './AvailableMedicine.css'
+import MedicineItem from './MedicineItem';
 const dummy_medicines = [
     {
       id: 1,
@@ -65,22 +66,10 @@ const dummy_medicines = [
   
 
 const AvailableMedicine = () =>{
-     let medicines = dummy_medicines.map((medicine) =>( 
-    
+     let medicines = dummy_medicines.map((medicine) => (
      <li key={medicine.id}>
-        <div className='medi-info'>
-            <div className='medi-info-content'>
-        <div className='name'> {medicine.name}</div>
-        <div className='disc'>{medicine.description}</div>
-        <div className='price'>  &#x20B9; {medicine.price}</div>
-        </div>
-        <div className='medi-info-quantity'>
-            <p>Amount {1}</p>
-            <button>+Add</button>
-        </div>
-        </div>
-         </li>
-     ))
+         <MedicineItem name={medicine.name} description={medicine.description} price={medicine.price}/>
+      </li> ))
     return(
         <>
         <div className='medicine-container'>

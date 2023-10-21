@@ -1,12 +1,15 @@
+
 import CartLogo from '../CartLogo/CartLogo';
 import './Header.css'
 
-const Header = () =>{
+const Header = (props) =>{
     return(
         <>
         <div className='header'>
          <h1>PharmaWala</h1>
-         <CartLogo />
+          <button onClick={() => props.setShowCart(true)}> 
+          <CartLogo />
+          </button> 
          </div>
         </>
     )

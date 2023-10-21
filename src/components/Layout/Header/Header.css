@@ -4,5 +4,12 @@
     display: flex;
     justify-content:space-around;
     align-items: center;
-    color:  rgb(37, 32, 32)
+    color:  rgb(37, 32, 32);
 }
+
+.header button{
+  
+     border: none;
+     border-radius: 4rem;
+}
+
