@@ -68,7 +68,7 @@ const dummy_medicines = [
 const AvailableMedicine = () =>{
      let medicines = dummy_medicines.map((medicine) => (
      <li key={medicine.id}>
-         <MedicineItem name={medicine.name} description={medicine.description} price={medicine.price}/>
+         <MedicineItem id={medicine.id} name={medicine.name} description={medicine.description} price={medicine.price}/>
       </li> ))
     return(
         <>

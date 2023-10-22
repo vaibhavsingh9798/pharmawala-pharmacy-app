@@ -1,15 +1,18 @@
+import { useContext } from 'react'
 import './CartCard.css'
+import CartContext from '../../Store/cart-context'
 const CartCard = (props) =>{
 
-  let arr = [{name:'medi1',price:10},{name:'medi2',price:20}]
+  let  cartContext = useContext(CartContext)
  
-  let result =     arr.map((props,ind) => (
-    <div className='medi-info' key={ind}>
+let totalAmount = 0
+  let result =    cartContext.cartItem.map((item,ind) => ( 
+    <div className='medi-info' key={item.id}>
     <div className='medi-info-content'>
-<div className='name'> {props.name}</div>
+<div className='name'> {item.name}</div>
 <div className='price-muti'>
-<div className='price'>  &#x20B9; {props.price}</div>
-<div className='count'>{'x4'}</div>
+<div className='price'>  &#x20B9; {item.price}</div>
+<div className='count'>{`X${item.count}`}</div>
 </div>
 </div>
 <div className='cart-button'>
@@ -26,7 +29,7 @@ const CartCard = (props) =>{
                {result}
                <div className='total-item'>
                  <div>Total Amount</div>
-                 <div>{20}</div>
+                 <div>{cartContext.totalAmount}</div>
                </div>
                <div className='close-button'>
                 <div> <button>order</button></div>

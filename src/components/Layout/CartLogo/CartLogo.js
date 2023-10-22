@@ -1,13 +1,17 @@
+import { useContext } from 'react'
 import logo from '../../../images/1.png'
-
 import './CartLogo.css'
+import CartContext from '../../Store/cart-context'
+
 const CartLogo = () =>{
+   const cartItem =  useContext(CartContext)
+   console.log('ci..',cartItem.totalItem)
     return(
         <>
         <div className="cart">
             <img src={logo} alt='logo' />
             <p>Your Cart</p>
-            <p className='count'>10</p>
+            <p className='count'> {cartItem.totalItem} </p>
         </div>
        
         </>
