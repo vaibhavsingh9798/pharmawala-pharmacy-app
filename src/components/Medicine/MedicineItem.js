@@ -8,7 +8,7 @@ const MedicineItem = (props) =>{
     const storeContext = useContext(CartContext)
     const handleAdd = ()=>{
         setAmount(amout+1)
-        storeContext.onInc()
+       // storeContext.onInc()
         storeContext.onCart(props)
     }
     return(

@@ -4,8 +4,7 @@ import './CartLogo.css'
 import CartContext from '../../Store/cart-context'
 
 const CartLogo = () =>{
-   const cartItem =  useContext(CartContext)
-   console.log('ci..',cartItem.totalItem)
+   const cartItem =  useContext(CartContext )
     return(
         <>
         <div className="cart">

@@ -16,8 +16,8 @@ let totalAmount = 0
 </div>
 </div>
 <div className='cart-button'>
-    <button>+</button>
-    <button>-</button>
+    <button onClick={() => cartContext.onCart(item)}>+</button>
+    <button onClick={() => cartContext.onDec(item)}>-</button>
 </div>
 </div>    
   ))
